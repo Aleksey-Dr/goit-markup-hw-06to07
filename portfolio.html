@@ -20,42 +20,50 @@
   <body class="link-decoration">
     <!-- HEADER CONTENT -->
     <header class="header-page">
-      <div class="container container-header">
+      <!-- Block container -->
+      <div class="container header-page__container">
         <!-- Navigation content -->
-        <nav class="nav-main">
+        <!-- Block site-nav -->
+        <nav class="site-nav">
           <!-- Logo text -->
+          <!-- Block logo -->
           <a href="./index.html" class="logo"
-            ><span class="logo-web">Web</span>Studio</a
+            ><span class="logo--color">Web</span>Studio</a
           >
           <!-- Navigation to other pages -->
-          <ul class="nav-ul-site list">
-            <li class="item">
-              <a href="./index.html" class="link">Студія</a>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link-portfolio link current"
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--active site-nav__linkPortfolio--underline"
                 >Портфоліо</a
               >
             </li>
-            <li class="item"><a href="" class="link">Контакти</a></li>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакти</a>
+            </li>
           </ul>
         </nav>
         <!-- Сontacts -->
-        <ul class="header-contacts list">
+        <!-- Block contacts -->
+        <ul class="contacts list">
           <!-- :hover -->
-          <li class="item">
+          <li class="contacts__item">
             <!-- Link to email app -->
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="icon-envelope">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon--mail">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               <span>info@devstudio.com</span></a
             >
           </li>
-          <li class="item">
+          <li class="contacts__item--phone">
             <!-- Link to phone app -->
-            <a href="tel:+380961111111" class="link">
-              <svg class="icon-smartphone">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon--phone">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               ><span>+38 096 111 11 11</span></a
             >
@@ -373,7 +381,12 @@
               <label class="title-subscribe" for="email"
                 >Підпишіться на розсилку</label
               >
-              <input class="email-fild" type="email" id="email" placeholder="E-mail" />
+              <input
+                class="email-fild"
+                type="email"
+                id="email"
+                placeholder="E-mail"
+              />
             </div>
             <button class="button-subscribe" type="submit">
               Підписатися<svg class="icon-send">
