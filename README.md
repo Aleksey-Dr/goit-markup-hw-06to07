@@ -1,4 +1,5 @@
 # goit-markup-hw-06to07
+[![Technologies](https://skillicons.dev/icons?i=html,css)](https://skillicons.dev)
 
 This repository is intermediate from the homework number six to homework number seven.
 
